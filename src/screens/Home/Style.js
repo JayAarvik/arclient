@@ -1,0 +1,82 @@
+import { StyleSheet } from "react-native"
+import { BGC, BGR } from "../../Utils/Import";
+
+const Style = StyleSheet.create({
+   background:{
+    backgroundColor:"#fff"
+   },
+   bgImage:{
+    height:"100%",
+    width:"100%",
+    resizeMode:"cover"
+   },
+   contentView:{
+    padding:20,
+    height:"100%"
+   },
+   firstView:{
+      padding:10,
+      backgroundColor:BGR,
+      paddingBottom:100,
+      borderBottomRightRadius:30,
+      borderBottomLeftRadius:30
+   },
+   searchMain:{
+      flexDirection:"row",
+      alignItems:"center"
+   },
+   searchBarStyle:{
+      flexDirection:"row",
+      alignItems:"center",
+      backgroundColor:"#fff",
+      paddingHorizontal:5,
+      marginRight:5,
+      borderRadius:10
+   },
+   textInputStyle:{
+      padding:5
+   },
+   UprIcon:{
+      paddingHorizontal:5
+   },
+   addressStyle:{
+      marginTop:10,
+      flexDirection:"row",
+      alignItems:"center",
+      justifyContent:"space-between"
+   },
+   addressHeading:{
+      flexDirection:"row",
+      alignItems:"center",
+   },
+   nameView:{
+      flexDirection:"row",
+      alignItems:"center",
+      marginTop:10
+   },
+   voucherView:{
+      flexDirection:"row",
+      alignItems:"center",
+      marginTop:10
+   },
+   voucherInside:{
+      flexDirection:"row",
+      alignItems:"center",
+      justifyContent:"space-between",
+      backgroundColor:"#02424C",
+      padding:10,
+      borderRadius:10,
+      marginHorizontal:2
+   },
+   secondView:{
+      marginHorizontal:20,
+      // marginTop:-50,
+      backgroundColor:"red"
+   },
+   catgryView:{
+      backgroundColor:"#fff",
+      elevation:5,
+   }
+})
+
+export default Style;
