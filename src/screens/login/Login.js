@@ -11,7 +11,7 @@ export default function Login({ navigation }) {
     const [e_no, setE_No] = useState("");
 
     const Login = () => {
-        navigation.navigate("Home")
+        navigation.navigate("Tabs")
     }
     const SignUp = () => {
         navigation.navigate("Registration");

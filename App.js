@@ -5,6 +5,7 @@ import Login from './src/screens/login/Login';
 import Registration from './src/screens/Registration/Registration';
 import Home from './src/screens/Home/Home';
 import StartScreen from './src/screens/Start/StartScreen';
+import Tabs from './src/screens/BottomBar/Tabs';
 
 const Stack = createStackNavigator();
 
@@ -13,9 +14,9 @@ const App = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name="StartScreen" component={StartScreen} options={{headerShown: false}} />
-                <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
                 <Stack.Screen name="Login" component={Login} options={{headerShown: false}} />
                 <Stack.Screen name="Registration" component={Registration} options={{headerShown: false}} />
+                <Stack.Screen name="Tabs" component={Tabs} options={{headerShown: false}} />
             </Stack.Navigator>
         </NavigationContainer>
     );

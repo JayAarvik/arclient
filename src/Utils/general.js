@@ -156,6 +156,10 @@ export const Txt = p => {
             ? '#111111'
             : p.c === 'bgr'
             ? '#7EDA85'
+            : p.c === 'yl'
+            ? '#FFFF00'
+            : p.c === 'bgrdrk'
+            ? '#0EB177'
             : p.c === 'or'
             ? '#FA5F1A'
             : '#7f7f7f',

@@ -10,7 +10,7 @@ export default function Register({ navigation }) {
     const [no, setNo] = useState("");
     const [e_no, setE_No] = useState("");
     const goToHome = () => {
-        navigation.navigate("Home")
+        navigation.navigate("Tabs")
     }
     const Login = () => {
         navigation.navigate("Home");

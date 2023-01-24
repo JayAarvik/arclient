@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"
-import { BGC, BGR } from "../../Utils/Import";
+import { BGC, BGR, BGRDRK } from "../../Utils/Import";
 
 const Style = StyleSheet.create({
    background:{
@@ -70,12 +70,85 @@ const Style = StyleSheet.create({
    },
    secondView:{
       marginHorizontal:20,
-      // marginTop:-50,
-      backgroundColor:"red"
+      marginTop:-60,
    },
    catgryView:{
+      paddingHorizontal:15,
       backgroundColor:"#fff",
       elevation:5,
+      paddingVertical:10,
+      borderRadius:15
+   },
+   catFlatView:{
+      marginHorizontal:5,
+      paddingHorizontal:5
+   },
+   catFlatImage:{
+      height:50,
+      width:50,
+      alignSelf:"center"
+   },
+   getOffView:{
+      backgroundColor:BGR,
+      marginTop:25,
+      borderRadius:15,
+      flexDirection:"row",
+      justifyContent:"space-between",
+      overflow:"hidden"
+   },
+   periodView:{
+      backgroundColor: "#02424C",
+      paddingVertical:5,
+      borderRadius:10,
+      paddingHorizontal:10,
+      marginTop:5
+   },
+   offerInner:{
+      padding:15
+   },
+   offerImageStyle:{
+      height:120,
+      width:120
+   },
+   seeMoreView:{
+      marginTop:25,
+      marginBottom:50,
+   },
+   textMoreInner:{
+      flexDirection:"row",
+      justifyContent:"space-between",
+      alignItems:"center"
+   },
+   seeMoreStyle:{
+      flexDirection:"row",
+      justifyContent:"space-between",
+      alignItems:"center"
+   },
+   itemsStyle:{
+      borderTopLeftRadius:15,
+      borderTopRightRadius:15,
+      overflow:"hidden",
+      marginHorizontal:6,
+      marginTop:10,
+      marginBottom:5,
+      // elevation:3,
+      backgroundColor:"#fff"
+   },
+   itemImage:{
+      height:180,
+      width:150,
+   },
+   addCartView:{
+      borderWidth:1,
+      borderColor:BGRDRK,
+      paddingVertical:8,
+      borderRadius:5,
+      marginBottom:3
+   },
+   moreFlatStyle:{
+   },
+   itemFlatTextView:{
+      paddingHorizontal:5
    }
 })
 
