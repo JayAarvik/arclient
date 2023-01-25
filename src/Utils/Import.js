@@ -11,3 +11,4 @@ export const BGC = "#ce171f";
 export const BGR = "#7EDA85";
 export const BGRDRK = "#0EB177";
 export const LGR = "#E4F9E8";
+export const BLUE = "#02424C";

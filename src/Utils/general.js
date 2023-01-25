@@ -160,6 +160,8 @@ export const Txt = p => {
             ? '#FFFF00'
             : p.c === 'bgrdrk'
             ? '#0EB177'
+            : p.c === 'blue'
+            ? '#02424C'
             : p.c === 'or'
             ? '#FA5F1A'
             : '#7f7f7f',
@@ -182,7 +184,8 @@ export const Txt = p => {
         paddingLeft: p.pl ? p.pl : 0,
         padding: p.pd ? p.pd : 0,
         backgroundColor: p.bg ? p.bg : "transparent",
-        borderRadius: p.brd ? p.brd : 0
+        borderRadius: p.brd ? p.brd : 0,
+        textDecorationLine: p.tdl ? 'line-through' : null,
       }}
     >
       {p.children}

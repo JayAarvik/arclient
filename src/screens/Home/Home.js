@@ -37,6 +37,9 @@ export default function Home({ navigation }) {
     const registerNow = () => {
         navigation.navigate("Registration");
     }
+    const SeeMore = () => {
+        navigation.navigate("AllItems");
+    }
     const renderCategories = (item) => {
         return (
             <View style={Style.catFlatView}>
@@ -131,10 +134,10 @@ export default function Home({ navigation }) {
                 <View style={Style.seeMoreView}>
                     <View style={Style.textMoreInner}>
                         <Txt c="ttl" w="500" s={20}>Today's Inspiration</Txt>
-                        <View style={Style.seeMoreStyle}>
+                        <TouchableOpacity style={Style.seeMoreStyle} onPress={()=>SeeMore()}>
                             <Txt c="bgrdrk">See more</Txt>
                             <MaterialIcons size={25} color={BGRDRK} name="keyboard-arrow-right" />
-                        </View>
+                        </TouchableOpacity>
                     </View>
                     <View style={Style.moreFlatStyle}>
                         <FlatList

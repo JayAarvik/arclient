@@ -6,6 +6,8 @@ import Registration from './src/screens/Registration/Registration';
 import Home from './src/screens/Home/Home';
 import StartScreen from './src/screens/Start/StartScreen';
 import Tabs from './src/screens/BottomBar/Tabs';
+import AllItems from './src/screens/AllItems/AllItems';
+import SingleItem from './src/screens/SingleItem/SingleItem';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +19,8 @@ const App = () => {
                 <Stack.Screen name="Login" component={Login} options={{headerShown: false}} />
                 <Stack.Screen name="Registration" component={Registration} options={{headerShown: false}} />
                 <Stack.Screen name="Tabs" component={Tabs} options={{headerShown: false}} />
+                <Stack.Screen name="AllItems" component={AllItems} options={{headerShown: false}} />
+                <Stack.Screen name="SingleItem" component={SingleItem} options={{headerShown: false}} />
             </Stack.Navigator>
         </NavigationContainer>
     );
