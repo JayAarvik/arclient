@@ -6,6 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { BGC, BGRDRK } from '../../Utils/Import';
 import Home from '../Home/Home';
 import ShoppingList from '../ShoppingList/ShoppingList';
+import Profile from '../Profile/Profile';
 
 
 const Tab = createBottomTabNavigator();
@@ -29,6 +30,15 @@ export default function Tabs() {
             tabBarLabel: 'Shopping List',
             tabBarIcon: ({ color, size, focused }) => (
                 <MaterialCommunityIcons size={25} color={focused ? BGRDRK : "gray"} name="shopping" />
+            ),
+            tabBarActiveTintColor:BGRDRK
+          }}
+        />
+        <Tab.Screen name="Profile" component={Profile}
+        options={{
+            tabBarLabel: 'Profile',
+            tabBarIcon: ({ color, size, focused }) => (
+                <MaterialCommunityIcons size={25} color={focused ? BGRDRK : "gray"} name="account" />
             ),
             tabBarActiveTintColor:BGRDRK
           }}

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
 import { BGC, BGR, BGRDRK, BLUE } from "../../Utils/Import";
-
+import { Platform } from "react-native";
 const Style = StyleSheet.create({
    background:{
     backgroundColor:"#fff",
@@ -12,9 +12,10 @@ const Style = StyleSheet.create({
     resizeMode:"cover"
    },
    contentView:{
-    padding:20
+    padding:10
    },
    headingIcon:{
+    paddingTop : Platform.OS == "ios" ? 50 : null,
     flexDirection:"row",
     alignItems:"center",
     justifyContent:"space-between"
@@ -26,11 +27,27 @@ const Style = StyleSheet.create({
     borderRadius:10
    },
    shopListView:{
-    marginTop:20
    },
    borderLine:{
     height:1,
-    backgroundColor:"#DCDCDC",
+    backgroundColor:"#D3D3D3",
+    marginVertical:5
+   },
+   listImageStyle:{
+      height:90,
+      width:90,
+      borderRadius:10
+   },
+   listFlatView:{
+      flexDirection:"row",
+      alignItems:"center",
+      marginVertical:5,
+      backgroundColor:"#F3F8F3",
+      padding:10
+   },
+   flatTextView:{
+      paddingHorizontal:5,
+      width:"88%"
    }
 })
 

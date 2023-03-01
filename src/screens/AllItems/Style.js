@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native"
 import { BGC, BGR, BGRDRK } from "../../Utils/Import";
+import { Platform } from "react-native";
 
 const Style = StyleSheet.create({
    background:{
@@ -16,6 +17,7 @@ const Style = StyleSheet.create({
     height:"100%"
    },
    firstView:{
+      paddingTop:Platform.OS == "ios" ? 50 : null,
       padding:10,
       backgroundColor:BGR,
       paddingBottom:20,

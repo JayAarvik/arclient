@@ -48,9 +48,12 @@ export default function Home({ navigation }) {
             </View>
         )
     }
+    const OpenSingleItem = () => {
+        navigation.navigate("SingleItem");
+    }
     const renderTodayItem = (item) => {
         return (
-            <View style={Style.itemsStyle}>
+            <TouchableOpacity style={Style.itemsStyle} onPress={() => OpenSingleItem()}>
                 <Image source={item.pImage} style={Style.itemImage} />
                 <View style={Style.itemFlatTextView}>
                     <Txt c="bgrdrk">{item.type}</Txt>
@@ -60,8 +63,14 @@ export default function Home({ navigation }) {
                         <Txt a="c" c="bgrdrk" w="500">Add to cart</Txt>
                     </View>
                 </View>
-            </View>
+            </TouchableOpacity>
         )
+    }
+    const GoTOCart = () => {
+        navigation.navigate("CartScreen");
+    }
+    const OpenNotifications = () => {
+        navigation.navigate("Notifications");
     }
     return (
         <ScrollView style={Style.background}>
@@ -75,8 +84,14 @@ export default function Home({ navigation }) {
                             placeholder='Search for fruits, vegetables, grocery..'
                         />
                     </View>
-                    <MaterialIcons size={30} color="#fff" name="notifications-none" style={Style.UprIcon} />
-                    <MaterialCommunityIcons size={30} color="#fff" name="cart-outline" style={Style.UprIcon} />
+                    <View style={Style.iconBtnsView}>
+                    <TouchableOpacity onPress={() => OpenNotifications()}>
+                        <MaterialIcons size={30} color="#fff" name="notifications-none" style={Style.UprIcon} />
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => GoTOCart()}>
+                        <MaterialCommunityIcons size={30} color="#fff" name="cart-outline" style={Style.UprIcon} />
+                    </TouchableOpacity>
+                    </View>
                 </View>
                 <View style={Style.addressStyle}>
                     <View style={Style.addressHeading}>
@@ -134,7 +149,7 @@ export default function Home({ navigation }) {
                 <View style={Style.seeMoreView}>
                     <View style={Style.textMoreInner}>
                         <Txt c="ttl" w="500" s={20}>Today's Inspiration</Txt>
-                        <TouchableOpacity style={Style.seeMoreStyle} onPress={()=>SeeMore()}>
+                        <TouchableOpacity style={Style.seeMoreStyle} onPress={() => SeeMore()}>
                             <Txt c="bgrdrk">See more</Txt>
                             <MaterialIcons size={25} color={BGRDRK} name="keyboard-arrow-right" />
                         </TouchableOpacity>
